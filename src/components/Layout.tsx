@@ -28,15 +28,13 @@ export default function Layout({ children }: Props) {
           }
           main {
             display: flex;
+            flex: 1;
             min-height: 100%;
           }
           @media (min-width: 769px) {
             .root {
               display: flex;
-              flex: 1 0 auto;
-            }
-            main {
-              flex: 1 0 auto;
+              flex: 1 auto;
             }
           }
         `}

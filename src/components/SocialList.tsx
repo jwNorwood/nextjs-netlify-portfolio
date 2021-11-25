@@ -3,12 +3,12 @@ import Twitter from "../assets/twitter-alt.svg";
 import GitHub from "../assets/github-alt.svg";
 import config from "../lib/config";
 
-export function SocialList({}) {
+const SocialList = () => {
   return (
     <div>
       <a
-        title="Twitter"
-        href={`https://twitter.com/${config.twitter_account}`}
+        title="LinkedIn"
+        href={`https://linkedin.com/in/j${config.linkedIn_account}`}
         target="_blank"
         rel="noopener"
       >
@@ -33,3 +33,5 @@ export function SocialList({}) {
     </div>
   );
 }
+
+export default SocialList;
