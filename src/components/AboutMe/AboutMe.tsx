@@ -3,7 +3,6 @@ import Work from "./Work";
 import { Skills } from "./Skills/";
 import Headline from "./Headline";
 
-
 const AboutMe = () => {
   return (
     <>
@@ -29,7 +28,12 @@ const AboutMe = () => {
       margin: 0 auto;
     }
     .section {
-      margin: 3.5rem 0;
+      margin: 1.5rem 0;
+    }
+    @media (min-width: 768px) {
+      .section {
+        margin: 3.5rem 0;
+      }
     }
   `}</style>
     </>

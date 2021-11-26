@@ -1,7 +1,6 @@
 import React from "react";
-import Twitter from "../assets/twitter-alt.svg";
-import GitHub from "../assets/github-alt.svg";
 import config from "../lib/config";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SocialList = () => {
   return (
@@ -12,7 +11,7 @@ const SocialList = () => {
         target="_blank"
         rel="noopener"
       >
-        <Twitter width={24} height={24} fill={"#222"} />
+        <FaLinkedin size="2rem" />
       </a>
       <a
         title="GitHub"
@@ -20,7 +19,7 @@ const SocialList = () => {
         target="_blank"
         rel="noopener"
       >
-        <GitHub width={24} height={24} fill={"#222"} />
+        <FaGithub size="2rem" />
       </a>
       <style jsx>{`
         a {

@@ -38,6 +38,10 @@ const Headline = () => {
     }
     .headline {
       margin: 25px auto;
+      min-height: 33vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     @media (min-width: 769px) {

@@ -63,9 +63,6 @@ export default function PostList({ posts, tags, pagination }: Props) {
         .posts li {
           margin-bottom: 1.5rem;
         }
-        .post-list {
-          flex: 1 0 auto;
-        }
         .categories {
           display: none;
         }

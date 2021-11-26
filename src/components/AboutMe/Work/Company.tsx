@@ -7,10 +7,7 @@ const Company = ({ name, industry, years, skills, children }) => {
         <div className="company-header">
           <h3>{name}</h3><strong className="industry">{industry}</strong>
         </div>
-        <p>
-          <strong>Years:</strong> {years}
-        </p>
-        <p>{children}</p>
+        {children}
         <div className="company-skills">
           {skills.map((skill, index) => (
             <div className="company-skill" key={index}>
@@ -23,7 +20,7 @@ const Company = ({ name, industry, years, skills, children }) => {
     .company {
       display: flex;
       flex-direction: column;
-      margin: 45px 0;
+      margin-bottom: 45px;
     }
     .company-header {
       display: flex;

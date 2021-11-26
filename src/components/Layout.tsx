@@ -1,4 +1,6 @@
+import React, { useState } from "react";
 import Head from "next/head";
+import Burger from "./Burger";
 import Navigation from "./Navigation";
 import SocialList from "./SocialList";
 
@@ -6,6 +8,7 @@ type Props = {
   children: React.ReactNode;
 };
 export default function Layout({ children }: Props) {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="root">
       <Head>
@@ -15,11 +18,12 @@ export default function Layout({ children }: Props) {
         <link rel="apple-touch-icon" href="/icon.png" />
         <meta name="theme-color" content="#fff" />
       </Head>
-      <nav>
+      <Burger active={isOpen} onClick={() => setIsOpen(!isOpen)} />
+      <nav className={`${isOpen ? "open" : "" }`}>
           <Navigation />
           <SocialList />
       </nav>
-      <main>{children}</main>
+      <main className={`${isOpen ? "open" : "" }`}>{children}</main>
       <style jsx>
         {`
           .root {
@@ -40,15 +44,20 @@ export default function Layout({ children }: Props) {
             height: -moz-available;        
             height: -webkit-fill-available;  
             height: fill-available;
-            background: #eaeaea;
+            background: #d4f1f5;
             width: 150px;
+            border-left: 16px solid #73D2DE;
+            transform: translateX(-250px);
+            transition: transform 0.5s ease-in-out;
           }
           main {
             padding: 2rem 2rem;
             display: flex;
             flex: 1;
             min-height: 100%;
-            margin-left: 100px;
+          }
+          nav.open {
+            transform: translateX(0);
           }
           @media (min-width: 769px) {
             .root {
@@ -57,6 +66,9 @@ export default function Layout({ children }: Props) {
             }
             main {
               margin-left: 250px;
+            }
+            nav {
+              transform: translateX(0);
             }
           }
         `}

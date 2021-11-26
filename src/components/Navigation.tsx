@@ -42,12 +42,13 @@ export default function Navigation() {
             li {
               margin-bottom: 1.75rem;
               font-size: 1rem;
+              color: #73D2DE;
             }
             li:last-child {
               margin-bottom: 0;
             }
             .active {
-              color: #222;
+              color: #8F2D56;
             }
           `}
         </style>
