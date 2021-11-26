@@ -1,6 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
+.primary-color {
+  color: #D81159;
+}
+.primary-background-color {
+  background-color: #D81159;
+}
+.dark-primary-color {
+  color: #8F2D56;
+}
+.dark-primary-background-color {
+  background-color: #8F2D56;
+}
+.secondary-color {
+  color: #73D2DE;
+}
+.secondary-background-color {
+  background-color: #73D2DE;
+}
+.dark-secondary-color {
+  color: #218380;
+}
+.dark-secondary-background-color {
+  background-color: #218380;
+}
+.accent-color {
+  color: #FBB13C;
+}
+.accent-background-color {
+  background-color: #FBB13C;
+}
+
+
+
 html,
 body {
   font-family: "Ubuntu", sans-serif;

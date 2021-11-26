@@ -1,5 +1,4 @@
 import React from "react";
-import SocialList from "../SocialList";
 import Work from "./Work";
 import { Skills } from "./Skills/";
 import Headline from "./Headline";
@@ -9,19 +8,28 @@ const AboutMe = () => {
   return (
     <>
       <div className="container">
-        <Headline />
-        <SocialList />
-        <Skills />
-        <Work />
+        <div className="section">
+          <Headline />
+        </div>
+        <div className="section">
+          <Skills />
+        </div>
+        <div className="section">
+          <Work />
+        </div>
       </div>
       <style jsx>{`
     .container {
       display: flex;
       align-items: center;
-      justify-content: center;
       flex: 1 1 auto;
       flex-direction: column;
-      padding: 0 1.5rem;
+      padding: 0rem 1.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .section {
+      margin: 3.5rem 0;
     }
   `}</style>
     </>

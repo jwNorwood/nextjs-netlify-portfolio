@@ -8,7 +8,7 @@ const Headline = () => {
           Jacob <span className="fancy">Norwood</span>
         </h1>
         <span className="handle">Kansas City, Mo</span>
-        <h2>React Web &amp<br></br>
+        <h2>React Web &amp;<br></br>
           Mobile Application<br></br> Developer
         </h2>
       </div>
@@ -25,13 +25,19 @@ const Headline = () => {
       line-height: 1.25;
     }
     .fancy {
-      color: #15847d;
+      color: #218380;
     }
     .handle {
       display: inline-block;
-      margin-top: 0.275em;
-      color: #9b9b9b;
+      margin: 0.25rem 0;
+      padding-bottom: 0.5rem;
+      color: #8F2D56;
       letter-spacing: 0.05em;
+      
+      border-bottom: 2px solid #FBB13C;
+    }
+    .headline {
+      margin: 25px auto;
     }
 
     @media (min-width: 769px) {
