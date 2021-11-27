@@ -108,7 +108,7 @@ const SlideShow = ({ items, initialSlide = 0, closeSlideShow }) => {
         cursor: pointer;
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         
         border: 5px solid #218380;
       }

@@ -24,14 +24,17 @@ export default function PostList({ posts, tags, pagination }: Props) {
             </li>
           ))}
         </ul>
-        <Pagination
-          current={pagination.current}
-          pages={pagination.pages}
-          link={{
-            href: (page) => (page === 1 ? "/posts" : "/posts/page/[page]"),
-            as: (page) => (page === 1 ? null : "/posts/page/" + page),
-          }}
-        />
+        {pagination.pages > 1 && (
+          <Pagination
+            current={pagination.current}
+            pages={pagination.pages}
+            link={{
+              href: (page) => (page === 1 ? "/posts" : "/posts/page/[page]"),
+              as: (page) => (page === 1 ? null : "/posts/page/" + page),
+            }}
+          />
+        )}
+
       </div>
       <ul className={"categories"}>
         {tags.map((it, i) => (
@@ -61,7 +64,7 @@ export default function PostList({ posts, tags, pagination }: Props) {
           flex: 1 1 auto;
         }
         .posts li {
-          margin-bottom: 1.5rem;
+          margin-bottom: 2.5rem;
         }
         .categories {
           display: none;
