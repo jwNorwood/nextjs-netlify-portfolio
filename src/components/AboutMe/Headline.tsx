@@ -37,8 +37,7 @@ const Headline = () => {
       border-bottom: 2px solid #FBB13C;
     }
     .headline {
-      margin: 25px auto;
-      min-height: 33vh;
+      margin: 2rem auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -50,6 +49,10 @@ const Headline = () => {
       }
       h2 {
         font-size: 2.25rem;
+      }
+      .headline {
+        margin: 3rem auto;
+        min-height: 33vh;
       }
     }
   `}</style>

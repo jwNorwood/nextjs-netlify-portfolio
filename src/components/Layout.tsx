@@ -3,6 +3,7 @@ import Head from "next/head";
 import Burger from "./Burger";
 import Navigation from "./Navigation";
 import SocialList from "./SocialList";
+import Image from "next/image";
 
 type Props = {
   children: React.ReactNode;
@@ -19,11 +20,20 @@ export default function Layout({ children }: Props) {
         <meta name="theme-color" content="#fff" />
       </Head>
       <Burger active={isOpen} onClick={() => setIsOpen(!isOpen)} />
-      <nav className={`${isOpen ? "open" : "" }`}>
-          <Navigation />
+      <nav className={`${isOpen ? "open" : ""}`}>
+        <Navigation />
+        <div>
+          <img
+            src="/images/avatar.png"
+            alt="Jacob"
+            width={100}
+            height={100}
+            className="avatar"
+          />
           <SocialList />
+        </div>
       </nav>
-      <main className={`${isOpen ? "open" : "" }`}>{children}</main>
+      <main className={`${isOpen ? "open" : ""}`}>{children}</main>
       <style jsx>
         {`
           .root {
@@ -58,6 +68,11 @@ export default function Layout({ children }: Props) {
           }
           nav.open {
             transform: translateX(0);
+          }
+          .avatar {
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            background-color: #fff;  
           }
           @media (min-width: 769px) {
             .root {

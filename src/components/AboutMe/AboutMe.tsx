@@ -2,6 +2,7 @@ import React from "react";
 import Work from "./Work";
 import { Skills } from "./Skills/";
 import Headline from "./Headline";
+import Designs from "./Design/Designs";
 
 const AboutMe = () => {
   return (
@@ -15,6 +16,9 @@ const AboutMe = () => {
         </div>
         <div className="section">
           <Work />
+        </div>
+        <div className="section">
+          <Designs />
         </div>
       </div>
       <style jsx>{`
