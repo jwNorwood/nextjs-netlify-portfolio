@@ -65,7 +65,7 @@ const Designs = () => {
         .designs {
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-between;
+          justify-content: center;
         }
         h2 {
           font-size: 2.5rem;

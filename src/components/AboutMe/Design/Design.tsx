@@ -19,14 +19,9 @@ const Design = ({ item, index, setSelectedItem, setShowSlideShow }) => {
     </div>
       <style jsx>{`
         .item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
           margin: 10px;
           border: 1px solid #eaeaea;
           margin-bottom: 2rem;
-          border-radius: 5px;
           cursor: pointer;
           
           width: 200px;
