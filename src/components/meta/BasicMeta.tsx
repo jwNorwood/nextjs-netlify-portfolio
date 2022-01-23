@@ -1,5 +1,6 @@
 import Head from "next/head";
 import config from "../../lib/config";
+import ReactGA from "react-ga";
 
 type Props = {
   title?: string;
@@ -15,6 +16,9 @@ export default function BasicMeta({
   author,
   url,
 }: Props) {
+  ReactGA.initialize(config.ga_tracking_id);
+  ReactGA.pageview(url);
+
   return (
     <Head>
       <title>

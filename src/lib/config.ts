@@ -8,6 +8,7 @@ type Config = {
   readonly posts_per_page: number;
   readonly github_account: string;
   readonly linkedIn_account: string;
+  readonly ga_tracking_id: string;
 };
 
 export default config as Config;
