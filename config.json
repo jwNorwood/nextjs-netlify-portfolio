@@ -1,7 +1,7 @@
 {
-  "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
-  "site_title": "Next.js Netlify Blog",
-  "site_description": "Next.js blog template for Netlify",
+  "base_url": "https://jnorwood.com/",
+  "site_title": "React Developer - Jacob Norwood",
+  "site_description": "I am a React Developer based in Kansas City, MO. I love building things that people love. I work remotely and I am always looking for new opportunities to learn and grow. I have experience in front-end development and mobile development.",
   "site_keywords": [
     {
       "keyword": "Next.js"
@@ -11,6 +11,9 @@
     },
     {
       "keyword": "React"
+    },
+    {
+      "keyword": "Kansas City"
     }
   ],
   "posts_per_page": 8,

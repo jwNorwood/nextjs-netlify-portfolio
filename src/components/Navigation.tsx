@@ -13,7 +13,7 @@ export default function Navigation() {
               <a className={router.pathname === "/" ? "active" : null}>about</a>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/posts">
               <a
                 className={
@@ -23,7 +23,7 @@ export default function Navigation() {
                 blog
               </a>
             </Link>
-          </li>
+          </li> */}
         </ul>
         <style jsx>
           {`

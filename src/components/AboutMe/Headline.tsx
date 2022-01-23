@@ -7,10 +7,10 @@ const Headline = () => {
         <h1>
           Jacob <span className="fancy">Norwood</span>
         </h1>
-        <span className="handle">Kansas City, Mo</span>
         <h2>React Web &amp;<br></br>
           Mobile Application<br></br> Developer
         </h2>
+        <span className="handle">Working remote from Kansas City</span>
       </div>
 
       <style jsx>{`

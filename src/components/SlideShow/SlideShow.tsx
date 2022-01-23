@@ -76,10 +76,11 @@ const SlideShow = ({ items, initialSlide = 0, closeSlideShow }) => {
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #d4f1f5;
         margin: 0 15px;
 
         cursor: pointer;
+        border: 2px solid #218380;
       }
       .slide-show-nav-item.active {
         background-color: #218380;
@@ -94,14 +95,14 @@ const SlideShow = ({ items, initialSlide = 0, closeSlideShow }) => {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #d4f1f5;
         cursor: pointer;
-        border: 5px solid #218380;
+        border: 2px solid #218380;
       }
       .slide-show-close {
         height: 50px;
         width: 50px;
-        background-color: #fff;
+        background-color: #d4f1f5;
         border-radius: 50%;
         
         margin: 15px;
