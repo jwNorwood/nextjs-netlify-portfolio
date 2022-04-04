@@ -1,59 +1,71 @@
 import React, { useState } from "react";
 import Design from "./Design";
-import SlideShow from "../../SlideShow/SlideShow";
+import Lightbox from "react-image-lightbox";
+import 'react-image-lightbox/style.css';
 
 const Designs = () => {
   const items = [
     {
-      title: "1",
+      title: "Platinum Landing Page",
       thumbnail: "/images/designs/small/01.png",
       full: "/images/designs/full/01.png",
     },
     {
-      title: "2",
+      title: "Platinum Email Template",
       thumbnail: "/images/designs/small/02.png",
       full: "/images/designs/full/02.png",
     },
     {
-      title: "3",
+      title: "Citibank Landing Page",
       thumbnail: "/images/designs/small/03.png",
       full: "/images/designs/full/03.png",
     },
     {
-      title: "4",
+      title: "Citibank Content Page",
       thumbnail: "/images/designs/small/04.png",
       full: "/images/designs/full/04.png",
     },
-    { 
-      title: "5",
+    {
+      title: "Volly Summit Website",
       thumbnail: "/images/designs/small/05.png",
       full: "/images/designs/full/05.png",
     },
     {
-      title: "6",
+      title: "Marketing Landing Page",
       thumbnail: "/images/designs/small/06.png",
       full: "/images/designs/full/06.png",
     },
     {
-      title: "7",
+      title: "Columbia Daily Tribune Homepage",
       thumbnail: "/images/designs/small/07.png",
       full: "/images/designs/full/07.png",
     },
     {
-      title: "8",
+      title: "Magizine Content Page",
       thumbnail: "/images/designs/small/08.png",
       full: "/images/designs/full/08.png",
     }];
 
-    const [selectedItem, setSelectedItem] = useState();
-    const [showSlideShow, setShowSlideShow] = useState(false);
+  const fullImages = items.map(item => item.full);
 
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [showSlideShow, setShowSlideShow] = useState(false);
 
   return (
     <>
-      <h2>Design Work</h2>
       {showSlideShow && (
-        <SlideShow items={items} initialSlide={selectedItem} closeSlideShow={() => setShowSlideShow(false)} />
+        <Lightbox
+          mainSrc={fullImages[selectedItem]}
+          nextSrc={fullImages[(selectedItem + 1) % fullImages.length]}
+          prevSrc={fullImages[(selectedItem + fullImages.length - 1) % fullImages.length]}
+          onCloseRequest={() => setShowSlideShow(false)}
+          onMovePrevRequest={() =>
+            setSelectedItem((selectedItem + fullImages.length - 1) % fullImages.length)
+          }
+          onMoveNextRequest={() =>
+            setSelectedItem((selectedItem + 1) % fullImages.length)
+          }
+        />
       )}
 
       <div className="designs">

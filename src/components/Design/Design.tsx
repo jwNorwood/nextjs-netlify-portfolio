@@ -1,20 +1,19 @@
 import React from "react";
-import Work from "./Work";
+import Info from "./Info";
+import Designs from "./PastWork/Designs";
 import Skills from "./Skills";
-import Headline from "./Headline";
 
-const AboutMe = () => {
+const Design = () => {
   return (
     <>
       <div className="container">
         <section className="section">
-          <Headline />
-        </section>
-        <section className="section">
+          <Info />
           <Skills />
         </section>
+
         <section className="section">
-          <Work />
+          <Designs />
         </section>
       </div>
       <style jsx>{`
@@ -40,4 +39,4 @@ const AboutMe = () => {
   );
 }
 
-export default AboutMe;
+export default Design;

@@ -4,28 +4,28 @@ import Image from "next/image";
 const Design = ({ item, index, setSelectedItem, setShowSlideShow }) => {
   return (
     <>
-    <div className="item">
-      <img 
-        src={item.thumbnail} 
-        alt={item.title} 
-        className="thumbnail" 
-        onClick={
-          () => {
+      <div className="item">
+        <Image
+          src={item.thumbnail}
+          width={400}
+          height={400}
+          onClick={() => {
             setSelectedItem(index);
             setShowSlideShow(true);
-          }
-        }
+          }}
+          alt={item.title}
         />
-    </div>
+      </div>
       <style jsx>{`
         .item {
-          margin: 10px;
+          margin: 20px 10px;
           border: 1px solid #eaeaea;
           margin-bottom: 2rem;
           cursor: pointer;
           
           width: 200px;
           height: 200px;
+          box-shadow: 0px 0px 10px rgba(0, 5, 5, 0.2);
         }
         .thumbnail {  
           width: 100%;

@@ -30,6 +30,11 @@ const Work = () => {
         font-size: 2.5rem;
         line-height: 0.75;
       }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.35;
+        margin: 0.5rem 0;
+      }
     `}</style>
     </>
   );
