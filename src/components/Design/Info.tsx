@@ -6,9 +6,9 @@ const Info = () => {
       <h1>Design Work</h1>
       <p>I have done design work on...</p>
       <ul>
-        <li>Content rich projects including magizines and newspaper.</li>
+        <li>Content rich projects including magizines and newspaper websites.</li>
         <li>Landing pages and emails as part of marketing campaigns.</li>
-        <li>Small and midsized businesses and non profits on their marking website.</li>
+        <li>Small and mid-sized businesses and non profits on their marking website.</li>
       </ul>
 
       <style jsx>{`
