@@ -1,24 +1,22 @@
 import React from "react";
-import Image from "next/image";
 
 const Design = ({ item, index, setSelectedItem, setShowSlideShow }) => {
   return (
     <>
       <div className="item">
-        <Image
+        <img
           src={item.thumbnail}
-          width={400}
-          height={400}
           onClick={() => {
             setSelectedItem(index);
             setShowSlideShow(true);
           }}
           alt={item.title}
+          className="thumbnail"
         />
       </div>
       <style jsx>{`
         .item {
-          margin: 20px 10px;
+          margin: 10px;
           border: 1px solid #eaeaea;
           margin-bottom: 2rem;
           cursor: pointer;
