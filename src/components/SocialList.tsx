@@ -7,7 +7,7 @@ const SocialList = () => {
     <div>
       <a
         title="LinkedIn"
-        href={`https://linkedin.com/in/j${config.linkedIn_account}`}
+        href={`https://linkedin.com/in/${config.linkedIn_account}`}
         target="_blank"
         rel="noopener"
       >
