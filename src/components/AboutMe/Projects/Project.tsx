@@ -37,9 +37,12 @@ const Project = ({ title = "", link, github, children }) => {
             color: #fff;
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
+            font-weight: 600;
+            border-bottom: 0.25rem solid #1b5e61;
         }
         .project a:hover {
             background-color: #D81159;
+            border-bottom: 0.25rem solid #b71c47;
         }
         .project .links {
             display: flex;
