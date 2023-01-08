@@ -1,7 +1,6 @@
 import React from "react";
 import Skill from "../../Skill";
 import { FaNodeJs, FaGitAlt, FaReact, FaMobileAlt } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -9,7 +8,6 @@ const Skills = () => {
       <div className="skills">
         <Skill name="React"><FaReact size="5rem" color="#D81159" /></Skill>
         <Skill name="React Native"><FaMobileAlt  size="5rem" color="#218380" /></Skill>
-        <Skill name="Redux"><SiRedux size="5rem" color="#FBB13C" /></Skill>
         <Skill name="Git"><FaGitAlt size="5rem" color="#218380" /></Skill>
         <Skill name="NodeJS"><FaNodeJs size="5rem" color="#D81159"/> </Skill>
       </div>

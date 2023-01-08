@@ -2,6 +2,7 @@ import React from "react";
 import Work from "./Work";
 import Skills from "./Skills";
 import Headline from "./Headline";
+import Projects from "./Projects";
 
 const AboutMe = () => {
   return (
@@ -12,8 +13,7 @@ const AboutMe = () => {
         </section>
         <section className="section">
           <Skills />
-        </section>
-        <section className="section">
+          <Projects />
           <Work />
         </section>
       </div>
