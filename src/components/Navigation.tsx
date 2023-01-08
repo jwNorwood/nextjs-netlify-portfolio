@@ -51,6 +51,7 @@ export default function Navigation() {
               margin-bottom: 1.75rem;
               font-size: 1rem;
               color: #73D2DE;
+              font-weight: 400;
             }
             li:last-child {
               margin-bottom: 0;
