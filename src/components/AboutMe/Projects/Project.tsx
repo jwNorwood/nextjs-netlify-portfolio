@@ -24,6 +24,7 @@ const Project = ({ title = "", link, github, children }) => {
             box-shadow: 0 0 0.5rem rgba(0, 0, 20, 0.3);
             border-radius: 0.5rem;
             width: 300px;
+            max-width: 100%;
             min-height: 175px;
             }
             .project h3 {
@@ -54,7 +55,9 @@ const Project = ({ title = "", link, github, children }) => {
         }
         @media (max-width: 768px) {
             .project {
-            width: 100%;
+                width: 100%;
+                padding: 1rem;    
+                margin: 1rem 0;
             }
         }
 

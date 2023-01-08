@@ -13,7 +13,11 @@ const AboutMe = () => {
         </section>
         <section className="section">
           <Skills />
+        </section>
+        <section className="section">
           <Projects />
+        </section>
+        <section className="section">
           <Work />
         </section>
       </div>
@@ -29,6 +33,7 @@ const AboutMe = () => {
     }
     .section {
       margin: 1.5rem 0;
+      width: 100%;
     }
     @media (min-width: 768px) {
       .section {

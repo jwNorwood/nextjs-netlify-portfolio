@@ -25,6 +25,7 @@ const Work = () => {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 1rem 0;
       }
       h2 {
         font-size: 2.5rem;
