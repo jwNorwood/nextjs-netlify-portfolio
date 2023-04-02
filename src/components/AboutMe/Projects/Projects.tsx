@@ -9,7 +9,7 @@ const Projects = () => {
         <Project title="Wordle Clone" github="https://github.com/jwNorwood/infinite-words" link="https://wordle-infinite.netlify.app/">
           <p>Wordle clone built using Svelte and TailwindCSS that allows for infinite guesses.</p>
         </Project>
-        <Project title="Morgage Rate Calculator" github="https://github.com/jwNorwood/mortgage-calculator" link="https://dazzling-otter-6f606d.netlify.app/">
+        <Project title="Mortgage Rate Calculator" github="https://github.com/jwNorwood/mortgage-calculator" link="https://dazzling-otter-6f606d.netlify.app/">
           <p>Mortgage Rate Calculator built using Next.js, React, and D3.js</p>
         </Project>
       </div>

@@ -31,6 +31,7 @@ const Project = ({ title = "", link, github, children }) => {
             margin: 0;
             margin-bottom: 1rem;
             font-size: 1.5rem;
+            text-align: center;
             }
             .project a {
             margin-top: 1rem;
