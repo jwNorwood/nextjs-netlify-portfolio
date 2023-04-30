@@ -12,6 +12,9 @@ const Projects = () => {
         <Project title="Mortgage Rate Calculator" github="https://github.com/jwNorwood/mortgage-calculator" link="https://dazzling-otter-6f606d.netlify.app/">
           <p>Mortgage Rate Calculator built using Next.js, React, and D3.js</p>
         </Project>
+        <Project title="Slots Game" github="https://github.com/jwNorwood/slot-game" link="https://scintillating-sprite-96cee3.netlify.app/">
+          <p>Work in progress Slots game built using Svelte and PhaserJS.</p>
+        </Project>
       </div>
       <style jsx>{`
 
