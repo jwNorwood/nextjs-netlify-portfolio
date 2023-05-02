@@ -12,8 +12,8 @@ const Work = () => {
           <p>Used ReactJS to build out a bidding portal for contract work in the construction industry.</p>
           <p>Developed components for an internal Component Library using yalc and rollup.js to share React components across multiple web applications.</p>
           <p>Used React Native to build out a mobile (iOS and Android) application used for time tracking and onsite project management.</p>
-          <p>Used Expo to take advantage of Native mobile apis including location tracking and photos.</p>
-          <p>Published an pushed updates to the application on the Google Play and Apple App store.</p>
+          <p>Used Expo to take advantage of native mobile APIs including location tracking and photos.</p>
+          <p>Published and pushed updates to the application on the Google Play and Apple App store.</p>
         </Company>
         <Company name="Volly" industry="Finance / Housing" years={2} skills={["React", "Angular", "NodeJS", "Express", "PostgreSQL", "Mocha"]}>
           <p>Developed new features on a Marketing Automation (email) web applications using ReactJS, AngularJS, and NodeJS.</p>
