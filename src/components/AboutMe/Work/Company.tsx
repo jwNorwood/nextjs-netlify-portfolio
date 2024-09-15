@@ -7,25 +7,33 @@ const Company = ({
   skills,
   children,
   years,
+  title,
 }) => {
   return (
     <>
       <div className="company">
         <div className="companyHeader">
-          {link ? (
-            <a
-              href={link}
-              className="companyLink"
-            >
+          <div className="companyInfo">
+            {link ? (
+              <a
+                href={link}
+                className="companyLink"
+              >
+                <h3 className="companyName">
+                  {name}
+                </h3>
+              </a>
+            ) : (
               <h3 className="companyName">
                 {name}
               </h3>
-            </a>
-          ) : (
-            <h3 className="companyName">
-              {name}
-            </h3>
-          )}
+            )}
+            <span>
+              <strong className="title">
+                {title}
+              </strong>
+            </span>
+          </div>
           <strong className="industry">
             {industry}
           </strong>
@@ -69,6 +77,20 @@ const Company = ({
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
+        }
+        .companyInfo {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 6px;
+        }
+        .companyLink {
+          text-decoration: none;
+        }
+        .title,
+        .years {
+          font-weight: bold;
+          padding: 5px 15px;
         }
         .industry {
           font-weight: bold;

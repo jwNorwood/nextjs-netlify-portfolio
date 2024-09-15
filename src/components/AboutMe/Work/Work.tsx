@@ -8,9 +8,10 @@ const Work = () => {
       <div className="work">
         <Company
           name="Tractics"
+          title="JavaScript UI Developer"
           industry="Construction"
           link="https://tractics.io/"
-          years={2}
+          years={4}
           skills={[
             "React",
             "React Native",
@@ -65,6 +66,7 @@ const Work = () => {
           name="Volly"
           industry="Finance / Housing"
           link="https://myvolly.com/"
+          title="Software Engineer"
           years={2}
           skills={[
             "React",
@@ -119,6 +121,7 @@ const Work = () => {
         </Company>
         <Company
           name="Columbia Daily Tribune"
+          title="Web Developer"
           industry="News"
           link="https://www.columbiatribune.com/"
           years={2}
