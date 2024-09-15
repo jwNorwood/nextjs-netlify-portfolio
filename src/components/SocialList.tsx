@@ -1,6 +1,9 @@
 import React from "react";
 import config from "../lib/config";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const SocialList = () => {
   return (
@@ -31,6 +34,6 @@ const SocialList = () => {
       `}</style>
     </div>
   );
-}
+};
 
 export default SocialList;

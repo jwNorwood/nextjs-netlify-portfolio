@@ -1,68 +1,108 @@
 import React from "react";
 
-const Company = ({ name, industry, years, skills, children }) => {
+const Company = ({
+  name,
+  industry,
+  link,
+  skills,
+  children,
+  years,
+}) => {
   return (
     <>
       <div className="company">
-        <div className="company-header">
-          <h3>{name}</h3><strong className="industry">{industry}</strong>
+        <div className="companyHeader">
+          {link ? (
+            <a
+              href={link}
+              className="companyLink"
+            >
+              <h3 className="companyName">
+                {name}
+              </h3>
+            </a>
+          ) : (
+            <h3 className="companyName">
+              {name}
+            </h3>
+          )}
+          <strong className="industry">
+            {industry}
+          </strong>
         </div>
         {children}
-        <div className="company-skills">
-          {skills.map((skill, index) => (
-            <div className="company-skill" key={index}>
-              {skill}
-            </div>
-          ))}
+        <div className="companySkills">
+          {skills.map(
+            (
+              skill: string,
+              index: React.Key
+            ) => (
+              <div
+                className="companySkill"
+                key={index}
+              >
+                {skill}
+              </div>
+            )
+          )}
         </div>
       </div>
       <style jsx>{`
-    .company {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 45px;
-    }
-    .company-header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .company-header h3 {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-    .industry {
-      font-weight: bold;
-      padding: 5px 15px;
-      border-radius: 5px;
-      border-bottom: 6px solid #FBB13C;
-    }
-    .company-skills {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .company-skill {
-      margin: 5px 25px 5px 0; 
-      font-weight: bold;
-      padding: 5px 15px;
-      border-radius: 5px;
-    }
-    .company-skill:nth-child(even) {
-      background-color: #8F2D56;
-      color: #ffffff;
-      border-bottom: 6px solid #D81159;
-    }
-    .company-skill:nth-child(odd) {
-      background-color: #218380;
-      color: #fff;
-      border-bottom: 6px solid #73D2DE;
-    }
-
-    `}</style>
+        .company {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 45px;
+        }
+        .companyName:hover {
+          border-bottom: 6px solid
+            #218380;
+        }
+        .companyName {
+          margin: 0;
+          color: #218380;
+          font-size: 1.75rem;
+          border-bottom: 6px solid
+            #73d2de;
+        }
+        .companyHeader {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .industry {
+          font-weight: bold;
+          padding: 5px 15px;
+          border-radius: 5px;
+          border-bottom: 6px solid
+            #fbb13c;
+        }
+        .companySkills {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .companySkill {
+          margin: 5px 25px 5px 0;
+          font-weight: bold;
+          padding: 5px 15px;
+          border-radius: 5px;
+        }
+        .companySkill:nth-child(even) {
+          background-color: #8f2d56;
+          color: #ffffff;
+          border-bottom: 6px solid
+            #d81159;
+        }
+        .companySkill:nth-child(odd) {
+          background-color: #218380;
+          color: #fff;
+          border-bottom: 6px solid
+            #73d2de;
+        }
+      `}</style>
     </>
   );
-}
+};
 
 export default Company;

@@ -3,24 +3,47 @@ import Head from "next/head";
 import Burger from "./Burger";
 import Navigation from "./Navigation";
 import SocialList from "./SocialList";
-import Image from "next/image";
 
 type Props = {
   children: React.ReactNode;
 };
-export default function Layout({ children }: Props) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Layout({
+  children,
+}: Props) {
+  const [isOpen, setIsOpen] =
+    useState(false);
   return (
     <div className="root">
       <Head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="apple-touch-icon" href="/icon.png" />
-        <meta name="theme-color" content="#fff" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
+        <link
+          rel="manifest"
+          href="/site.webmanifest"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icon.png"
+        />
+        <meta
+          name="theme-color"
+          content="#fff"
+        />
       </Head>
-      <Burger active={isOpen} onClick={() => setIsOpen(!isOpen)} />
-      <nav className={`${isOpen ? "open" : ""}`}>
+      <Burger
+        active={isOpen}
+        onClick={() =>
+          setIsOpen(!isOpen)
+        }
+      />
+      <nav
+        className={`${
+          isOpen ? "open" : ""
+        }`}
+      >
         <Navigation />
         <div>
           <img
@@ -33,9 +56,18 @@ export default function Layout({ children }: Props) {
           <SocialList />
         </div>
       </nav>
-      <main className={`${isOpen ? "open" : ""}`}>{children}</main>
+      <main
+        className={`${
+          isOpen ? "open" : ""
+        }`}
+      >
+        {children}
+      </main>
       <style jsx>
         {`
+          html {
+            scroll-behavior: smooth;
+          }
           .root {
             display: block;
             box-sizing: border-box;
@@ -51,14 +83,18 @@ export default function Layout({ children }: Props) {
             padding: 2rem;
             height: 95vh;
             height: -webkit-fill-available;
-            height: -moz-available;        
-            height: -webkit-fill-available;  
+            height: -moz-available;
+            height: -webkit-fill-available;
             height: fill-available;
             background: #d4f1f5;
             width: 150px;
-            border-left: 16px solid #73D2DE;
-            transform: translateX(-250px);
-            transition: transform 0.5s ease-in-out;
+            border-left: 16px solid
+              #73d2de;
+            transform: translateX(
+              -250px
+            );
+            transition: transform 0.5s
+              ease-in-out;
           }
           main {
             padding: 2rem 2rem;
@@ -72,7 +108,7 @@ export default function Layout({ children }: Props) {
           .avatar {
             border-radius: 50%;
             margin-bottom: 1rem;
-            background-color: #fff;  
+            background-color: #fff;
           }
           @media (min-width: 769px) {
             .root {

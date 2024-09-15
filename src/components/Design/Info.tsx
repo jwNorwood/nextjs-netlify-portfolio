@@ -4,11 +4,24 @@ const Info = () => {
   return (
     <>
       <h1>Design Work</h1>
-      <p>I have done design work on...</p>
+      <p>
+        My past design has included the
+        following areas:
+      </p>
       <ul>
-        <li>Content rich projects including magazine and newspaper websites.</li>
-        <li>Landing pages and emails as part of marketing campaigns.</li>
-        <li>Small and mid-sized businesses and non profits on their marking website.</li>
+        <li>
+          Content rich projects
+          including magazine and
+          newspaper websites.
+        </li>
+        <li>
+          Landing pages and emails as
+          part of marketing campaigns.
+        </li>
+        <li>
+          Mid-sized businesses and
+          non-profit marketing websites.
+        </li>
       </ul>
 
       <style jsx>{`
@@ -26,14 +39,14 @@ const Info = () => {
         }
         li {
           margin-bottom: 1.25rem;
-          font-size: 1rem;
+          font-size: 1.25rem;
         }
         li:last-child {
           margin-bottom: 0;
         }
-    `}</style>
+      `}</style>
     </>
   );
-}
+};
 
 export default Info;

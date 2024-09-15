@@ -1,6 +1,11 @@
 import React from "react";
 
-const Design = ({ item, index, setSelectedItem, setShowSlideShow }) => {
+const Design = ({
+  item,
+  index,
+  setSelectedItem,
+  setShowSlideShow,
+}) => {
   return (
     <>
       <div className="item">
@@ -12,6 +17,7 @@ const Design = ({ item, index, setSelectedItem, setShowSlideShow }) => {
           }}
           alt={item.title}
           className="thumbnail"
+          loading="lazy"
         />
       </div>
       <style jsx>{`
@@ -20,12 +26,13 @@ const Design = ({ item, index, setSelectedItem, setShowSlideShow }) => {
           border: 1px solid #eaeaea;
           margin-bottom: 2rem;
           cursor: pointer;
-          
+
           width: 200px;
           height: 200px;
-          box-shadow: 0px 0px 10px rgba(0, 5, 5, 0.2);
+          box-shadow: 0px 0px 10px
+            rgba(0, 5, 5, 0.2);
         }
-        .thumbnail {  
+        .thumbnail {
           width: 100%;
           height: 100%;
           object-fit: cover;
@@ -45,6 +52,6 @@ const Design = ({ item, index, setSelectedItem, setShowSlideShow }) => {
       `}</style>
     </>
   );
-}
+};
 
 export default Design;

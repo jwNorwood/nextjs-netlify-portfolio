@@ -2,9 +2,18 @@ type Props = {
   active: boolean;
   onClick: () => void;
 };
-export default function Burger({ active, onClick }: Props) {
+export default function Burger({
+  active,
+  onClick,
+}: Props) {
   return (
-    <div className={"container " + (active ? "active" : "")} onClick={onClick}>
+    <div
+      className={
+        "container " +
+        (active ? "active" : "")
+      }
+      onClick={onClick}
+    >
       <div className={"meat meat-1"} />
       <div className={"meat meat-2"} />
       <div className={"meat meat-3"} />
@@ -18,7 +27,12 @@ export default function Burger({ active, onClick }: Props) {
             top: 1rem;
             left: 1.25rem;
             z-index: 2;
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: rgba(
+              255,
+              255,
+              255,
+              0.7
+            );
           }
           .meat {
             position: absolute;
@@ -27,10 +41,13 @@ export default function Burger({ active, onClick }: Props) {
             background: #218380;
             top: calc(50% - 2px / 2);
             left: calc(50% - 28px / 2);
-            transition: all 150ms ease-in;
+            transition: all 150ms
+              ease-in;
           }
           .meat-1 {
-            transform: translateY(-10px);
+            transform: translateY(
+              -10px
+            );
           }
           .meat-2 {
             width: calc(28px - 6px);
