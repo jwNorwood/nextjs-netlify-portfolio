@@ -64,7 +64,7 @@ const Work = () => {
         </Company>
         <Company
           name="Volly"
-          industry="Finance / Housing"
+          industry="Mortgage"
           link="https://myvolly.com/"
           title="Software Engineer"
           years={2}

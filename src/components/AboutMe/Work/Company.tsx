@@ -77,12 +77,15 @@ const Company = ({
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
+          flex-wrap: wrap;
         }
         .companyInfo {
           display: flex;
           flex-direction: row;
           align-items: center;
           gap: 6px;
+          flex-wrap: wrap;
+          padding-bottom: 8px;
         }
         .companyLink {
           text-decoration: none;
@@ -95,6 +98,7 @@ const Company = ({
         .industry {
           font-weight: bold;
           padding: 5px 15px;
+          margin-bottom: 8px;
           border-radius: 5px;
           border-bottom: 6px solid
             #fbb13c;
