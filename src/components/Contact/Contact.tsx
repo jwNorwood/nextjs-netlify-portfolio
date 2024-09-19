@@ -35,10 +35,10 @@ const Contact = () => {
         }
         h1 {
           margin-bottom: 1.5rem;
-          color: #218380;
+          color: #1b5e61;
         }
         a {
-          color: #218380;
+          color: #1b5e61;
           font-weight: 500;
         }
         a:hover {

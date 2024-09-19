@@ -109,14 +109,19 @@ export default function Navigation() {
           li {
             margin-bottom: 1.75rem;
             font-size: 1rem;
-            color: #73d2de;
             font-weight: 700;
           }
           li:last-child {
             margin-bottom: 0;
           }
+          a {
+            color: #1b5e61;
+            text-decoration: none;
+          }
           .active {
-            color: #8f2d56;
+            color: #1b5e61;
+            border-bottom: 2px solid
+              #8f2d56;
           }
         `}
       </style>

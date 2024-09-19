@@ -1,6 +1,19 @@
-module.exports = ({
+module.exports = {
   pageExtensions: ["tsx"],
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
+  webpack: (
+    config,
+    {
+      buildId,
+      dev,
+      isServer,
+      defaultLoaders,
+      webpack,
+    }
+  ) => {
     config.module.rules.push(
       ...[
         {
@@ -16,4 +29,4 @@ module.exports = ({
     );
     return config;
   },
-});
+};

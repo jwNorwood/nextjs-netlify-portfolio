@@ -27,6 +27,7 @@ const Skills = () => {
           <SiTypescript
             size="5rem"
             color="#fbb13c"
+            aria-label="TypeScript"
           />
         </Skill>
         <Skill name="Design">
@@ -51,6 +52,7 @@ const Skills = () => {
           <SiTailwindcss
             size="5rem"
             color="#218380"
+            aria-label="TailwindCSS"
           />
         </Skill>
 
