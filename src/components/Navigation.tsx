@@ -7,72 +7,67 @@ export default function Navigation() {
     <>
       <ul>
         <li>
-          <Link href="/">
-            <a
-              className={
-                router.pathname === "/"
-                  ? "active"
-                  : null
-              }
-            >
-              About Me
-            </a>
+          <Link
+            href="/"
+            className={
+              router.pathname === "/"
+                ? "active"
+                : null
+            }
+          >
+            About Me
           </Link>
         </li>
         <li>
-          <Link href="/#work_history">
-            <a
-              className={
-                router.pathname ===
-                "/#work_history"
-                  ? "active"
-                  : null
-              }
-            >
-              Work History
-            </a>
+          <Link
+            href="/#work_history"
+            className={
+              router.pathname ===
+              "/#work_history"
+                ? "active"
+                : null
+            }
+          >
+            Work History
           </Link>
         </li>
         <li>
-          <Link href="/#design">
-            <a
-              className={
-                router.pathname ===
-                "/design"
-                  ? "active"
-                  : null
-              }
-            >
-              Design Work
-            </a>
+          <Link
+            href="/#design"
+            className={
+              router.pathname ===
+              "/design"
+                ? "active"
+                : null
+            }
+          >
+            Design Work
           </Link>
         </li>
         <li>
-          <Link href="/#projects">
-            <a
-              className={
-                router.pathname ===
-                "/#projects"
-                  ? "active"
-                  : null
-              }
-            >
-              Projects
-            </a>
+          <Link
+            href="/#projects"
+            className={
+              router.pathname ===
+              "/#projects"
+                ? "active"
+                : null
+            }
+          >
+            Projects
           </Link>
         </li>
         <li>
-          <Link href="/#contact">
-            <a
-              className={
-                router.pathname ===
-                "/#contact"
-                  ? "active"
-                  : null
-              }
-            >
-              Contact
-            </a>
+          <Link
+            href="/#contact"
+            className={
+              router.pathname ===
+              "/#contact"
+                ? "active"
+                : null
+            }
+          >
+            Contact
           </Link>
         </li>
         {/* <li>
@@ -119,7 +114,6 @@ export default function Navigation() {
             text-decoration: none;
           }
           .active {
-            color: #1b5e61;
             border-bottom: 2px solid
               #8f2d56;
           }
