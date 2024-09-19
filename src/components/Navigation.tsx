@@ -7,67 +7,72 @@ export default function Navigation() {
     <>
       <ul>
         <li>
-          <Link
-            href="/"
-            className={
-              router.pathname === "/"
-                ? "active"
-                : null
-            }
-          >
-            About Me
+          <Link href="/">
+            <span
+              className={
+                router.pathname === "/"
+                  ? "active"
+                  : null
+              }
+            >
+              About Me
+            </span>
           </Link>
         </li>
         <li>
-          <Link
-            href="/#work_history"
-            className={
-              router.pathname ===
-              "/#work_history"
-                ? "active"
-                : null
-            }
-          >
-            Work History
+          <Link href="/#work_history">
+            <span
+              className={
+                router.pathname ===
+                "/#work_history"
+                  ? "active"
+                  : null
+              }
+            >
+              Work History
+            </span>
           </Link>
         </li>
         <li>
-          <Link
-            href="/#design"
-            className={
-              router.pathname ===
-              "/design"
-                ? "active"
-                : null
-            }
-          >
-            Design Work
+          <Link href="/#design">
+            <span
+              className={
+                router.pathname ===
+                "/design"
+                  ? "active"
+                  : null
+              }
+            >
+              Design Work
+            </span>
           </Link>
         </li>
         <li>
-          <Link
-            href="/#projects"
-            className={
-              router.pathname ===
-              "/#projects"
-                ? "active"
-                : null
-            }
-          >
-            Projects
+          <Link href="/#projects">
+            <span
+              className={
+                router.pathname ===
+                "/#projects"
+                  ? "active"
+                  : null
+              }
+            >
+              Projects
+            </span>
           </Link>
         </li>
         <li>
-          <Link
-            href="/#contact"
-            className={
-              router.pathname ===
-              "/#contact"
-                ? "active"
-                : null
-            }
-          >
-            Contact
+          <Link href="/#contact">
+            <span
+              className={
+                router.pathname ===
+                "/#contact"
+                  ? "active"
+                  : null
+              }
+            >
+              Contact
+            </span>
           </Link>
         </li>
         {/* <li>
@@ -109,11 +114,11 @@ export default function Navigation() {
           li:last-child {
             margin-bottom: 0;
           }
-          a {
+          span {
             color: #1b5e61;
             text-decoration: none;
           }
-          .active {
+          span.active {
             border-bottom: 2px solid
               #8f2d56;
           }
