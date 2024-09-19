@@ -15,6 +15,7 @@ export default function Layout({
   return (
     <div className="root">
       <Head>
+        <meta lang="en" />
         <meta charSet="utf-8" />
         <meta
           name="viewport"
