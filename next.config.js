@@ -1,9 +1,6 @@
 module.exports = {
   pageExtensions: ["tsx"],
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
+  output: "export",
   webpack: (
     config,
     {
