@@ -24,6 +24,7 @@ export default function PostItem({
           h2 {
             margin: 0;
             font-weight: 500;
+            color: #1b5e61;
           }
         `}
       </style>

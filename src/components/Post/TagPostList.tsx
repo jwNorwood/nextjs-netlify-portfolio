@@ -64,7 +64,7 @@ export default function TagPostList({
           }
           h1 span {
             font-weight: bold;
-            color: #222;
+            color: #1b5e61;
           }
           ul {
             margin: 0;
